@@ -1,0 +1,34 @@
+
+.mixi(@width,@direction,@color){
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: @width*20px;
+    border-@{direction}-color:@color;   
+    float: left; 
+}
+.box1{
+    .mixi(2 , top ,#99cc99);
+}
+.box2{
+    .mixi(1 , top ,#3c3c9e);
+}
+.box3{
+    .mixi(2 , bottom ,#3c3c9e);
+}
+.box4{
+    .mixi(1 , bottom ,#99cc99);
+}
+.box5{
+    .mixi(2 , left ,#c05b18);
+}
+.box6{
+    .mixi(1 , left ,#989e3c);
+}
+.box7{
+    .mixi(2 , right ,#989e3c);
+}
+.box8{
+    .mixi(1 , right ,#c05b18);
+}
